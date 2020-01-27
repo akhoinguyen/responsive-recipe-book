@@ -1,14 +1,34 @@
 html {
-  font-family: Lato, sans-serif;
+  font-family: freight-text-pro, serif;
 }
 
 body {
-  background-color: #faf4f0;
+  background: url("../images/banner-main-2.jpg") center center / cover no-repeat;
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: serenity, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+nav {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 15;
 }
 
 nav a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 nav a:focus {
@@ -16,22 +36,25 @@ nav a:focus {
 }
 
 header {
-  background: url("../images/banner-main.jpg") center center / cover no-repeat;
+  z-index: -20;
+}
+
+header .banner-pad {
   padding-top: 14vw;
   padding-bottom: 28vw;
-  z-index: -2;
 }
 
 .square {
   width: 100%;
   height: 110%;
-  background-color: #fff ;
-  z-index: -1;
+  background-color: #fff;
+  z-index: 5;
+  border: 1px solid #fff;
   position: absolute;
   bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
-  box-shadow: 4px 4px 8px rgba(141, 88, 51, .25);
+  /* box-shadow: 150px 150px 0px -130px rgba(210, 26, 12, .22); */
 }
 
 /* my classes */
@@ -44,8 +67,20 @@ header {
   color: #fff;
 }
 
+.text-red {
+  color: #eb2940;
+}
+
 .main-content {
   padding-bottom: 5em;
+}
+
+.main-content-text {
+  z-index: 10;
+}
+
+.white-bg {
+  background-color: #fff;
 }
 
 @media only screen  and (min-width: 25em) {
@@ -71,12 +106,21 @@ header {
     padding-bottom: 0;
   }
 
+  .col-2 {
+    column-count: 2;
+    max-height: 400px;
+  }
+
 }
 
 @media only screen  and (min-width: 60em) {
 
   .main-content {
     top: -10em;
+  }
+
+  .col-2 {
+    column-count: 3;
   }
 
 }
