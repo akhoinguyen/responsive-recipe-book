@@ -3,7 +3,19 @@ html {
 }
 
 body {
+  width: 100%;
+  max-width: 100em;
+}
+
+#body-index {
+  height: 100%;
   background: url("../images/banner-main-2.jpg") center center / cover no-repeat;
+  background-attachment: fixed;
+}
+
+#body-recipes {
+  height: 100%;
+  background: url("../images/banner-recipes.jpg") center center / cover no-repeat;
   background-attachment: fixed;
 }
 
@@ -26,9 +38,34 @@ nav {
   z-index: 15;
 }
 
+nav li:after {
+  content: '';
+  width: 0px;
+  height: 5px;
+  display: block;
+  background-color: #fff;
+  transition: .25s ease-in-out;
+}
+
+nav li:hover:after {
+  background-color: #eb2940;
+  width: 100%;
+}
+
+/*
+nav li {
+  border-bottom: 5px solid #fff;
+}
+
+nav li:hover {
+  border-bottom: 5px solid #eb2940;
+  transition: .25s ease-in-out;
+}
+*/
+
 nav a {
   text-decoration: none;
-  color: #000;
+  color: #eb2940;
 }
 
 nav a:focus {
@@ -39,9 +76,36 @@ header {
   z-index: -20;
 }
 
-header .banner-pad {
+header .banner-pad, .banner-pad-less {
   padding-top: 14vw;
   padding-bottom: 28vw;
+}
+
+.banner-pad-less {
+padding-bottom: 14vw;
+}
+.un {
+  display: inline-block;
+  color: #fff;
+}
+
+h1:hover .un {
+  color: #eb2940;
+  transition: .25s ease-in-out;
+}
+
+.un:after {
+  content: '';
+  width: 0px;
+  height: 12px;
+  display: block;
+  background-color: #fff;
+  transition: .25s ease-in-out;
+}
+
+h1:hover .un:after {
+  background-color: #eb2940;
+  width: 100%;
 }
 
 .square {
@@ -83,6 +147,19 @@ header .banner-pad {
   background-color: #fff;
 }
 
+/* recipes html */
+.hidden-overflow {
+  overflow: hidden;
+}
+
+.recipes-img-zoom {
+  transition: .125s linear;
+}
+
+.recipes-img-zoom:hover {
+transform: scale(1.1, 1.1);
+}
+
 @media only screen  and (min-width: 25em) {
 
   .square {
@@ -94,7 +171,7 @@ header .banner-pad {
 
   .square {
     width: 110%;
-    height: 145%;
+    height: 135%;
     bottom: -17.5%;
   }
 
