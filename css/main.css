@@ -80,7 +80,7 @@ header {
   z-index: -20;
 }
 
-header .banner-pad, .banner-pad-less {
+header .banner-pad, .banner-pad-less, .banner-pad-lesser {
   padding-top: 14vw;
   padding-bottom: 28vw;
 }
@@ -88,6 +88,11 @@ header .banner-pad, .banner-pad-less {
 .banner-pad-less {
   padding-bottom: 14vw;
 }
+
+.banner-pad-lesser {
+  padding-bottom: 3.5vw;
+}
+
 .un {
   display: inline-block;
   color: #fff;
@@ -131,11 +136,11 @@ h1:hover .un:after {
   padding-right: 2em;
 }
 
-.text-white {
+.white-text {
   color: #fff;
 }
 
-.text-red {
+.red-text {
   color: #eb2940;
 }
 
@@ -151,6 +156,10 @@ h1:hover .un:after {
   background-color: #fff;
 }
 
+.red-bg {
+  background-color: #eb2940;
+}
+
 .sans-serif-bold {
   font-family: serenity, sans-serif;
   font-weight: 700;
@@ -158,6 +167,7 @@ h1:hover .un:after {
 }
 
 /* recipes html */
+
 .hidden-overflow {
   overflow: hidden;
 }
