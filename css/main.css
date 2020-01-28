@@ -173,6 +173,7 @@ h1:hover .un:after {
 
 .recipes-name {
   filter: opacity(0);
+  width: 80%;
   transition:  filter .125s .05s linear;
 }
 
