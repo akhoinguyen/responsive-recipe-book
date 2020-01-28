@@ -130,6 +130,12 @@ h1:hover .un:after {
   /* box-shadow: 150px 150px 0px -130px rgba(210, 26, 12, .22); */
 }
 
+footer {
+  font-family: serenity, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 /* my classes */
 
 .r-pad-nav {
