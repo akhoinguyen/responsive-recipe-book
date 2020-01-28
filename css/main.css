@@ -27,8 +27,12 @@ h5,
 h6,
 a {
   font-family: serenity, sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
+}
+
+h3, a {
+  font-weight: 600;
 }
 
 nav {
@@ -44,7 +48,7 @@ nav li:after {
   height: 5px;
   display: block;
   background-color: #fff;
-  transition: .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
 
 nav li:hover:after {
@@ -54,12 +58,12 @@ nav li:hover:after {
 
 /*
 nav li {
-  border-bottom: 5px solid #fff;
+border-bottom: 5px solid #fff;
 }
 
 nav li:hover {
-  border-bottom: 5px solid #eb2940;
-  transition: .25s ease-in-out;
+border-bottom: 5px solid #eb2940;
+transition: .25s ease-in-out;
 }
 */
 
@@ -82,16 +86,16 @@ header .banner-pad, .banner-pad-less {
 }
 
 .banner-pad-less {
-padding-bottom: 14vw;
+  padding-bottom: 14vw;
 }
 .un {
   display: inline-block;
   color: #fff;
+  transition: color .25s ease-in-out;
 }
 
 h1:hover .un {
   color: #eb2940;
-  transition: .25s ease-in-out;
 }
 
 .un:after {
@@ -100,7 +104,7 @@ h1:hover .un {
   height: 12px;
   display: block;
   background-color: #fff;
-  transition: .25s ease-in-out;
+  transition: width .25s ease-in-out;
 }
 
 h1:hover .un:after {
@@ -147,17 +151,47 @@ h1:hover .un:after {
   background-color: #fff;
 }
 
+.sans-serif-bold {
+  font-family: serenity, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* recipes html */
 .hidden-overflow {
   overflow: hidden;
 }
 
 .recipes-img-zoom {
-  transition: .125s linear;
+  filter: brightness(1);
+  transition:  transform .125s linear, filter .125s linear;
 }
 
-.recipes-img-zoom:hover {
-transform: scale(1.1, 1.1);
+.recipes-transition-hover:hover .recipes-img-zoom{
+  transform: scale(1.1, 1.1);
+}
+
+.recipes-name {
+  filter: opacity(0);
+  transition:  filter .125s .05s linear;
+}
+
+.recipes-transition-hover:hover .recipes-name {
+  filter: opacity(1);
+}
+
+.red-overlay {
+  position: absolute;
+  background-color: red;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  filter: opacity(0);
+  transition:  filter .125s linear;
+}
+
+.recipes-transition-hover:hover .red-overlay {
+  filter: opacity(.75);
 }
 
 @media only screen  and (min-width: 25em) {
