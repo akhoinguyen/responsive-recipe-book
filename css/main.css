@@ -136,10 +136,26 @@ footer {
   font-style: normal;
 }
 
+.btn {
+  background-color: #eb2940;
+  border-color: #eb2940;
+  transition: all .125s linear;
+}
+
+.btn:hover {
+  background-color: #fff;
+  border-color: #eb2940;
+  color: #eb2940;
+}
+
 /* my classes */
 
 .r-pad-nav {
-  padding-right: 2em;
+  padding-right: 2rem;
+}
+
+.l-pad-nav {
+  padding-left: 2rem;
 }
 
 .white-text {
@@ -199,7 +215,8 @@ footer {
 
 .red-overlay {
   position: absolute;
-  background-color: red;
+  background-color: #eb2940;
+  mix-blend-mode: multiply;
   top: 0;
   width: 100%;
   height: 100%;
@@ -208,7 +225,7 @@ footer {
 }
 
 .recipes-transition-hover:hover .red-overlay {
-  filter: opacity(.75);
+  filter: opacity(.9);
 }
 
 @media only screen  and (min-width: 25em) {
