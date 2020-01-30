@@ -229,6 +229,33 @@ footer {
   filter: opacity(.9);
 }
 
+/* scroll down piping bag */
+
+.scroll-down {
+  bottom: -1.4em;
+}
+
+.scroll-down svg {
+  display: none;
+  max-width: 30px;
+  transform-origin: center;
+  animation: up-down 1.5s ease-in-out alternate infinite;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(0px);
+  }
+
+  60% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(16px);
+  }
+}
+
 @media only screen  and (min-width: 38em) {
 
   .square {
@@ -257,6 +284,14 @@ footer {
 
   .col-2 {
     column-count: 3;
+  }
+
+}
+
+@media only screen  and (min-width: 90em) {
+
+  .scroll-down svg {
+    display: block;
   }
 
 }
