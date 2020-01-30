@@ -81,16 +81,16 @@ header {
 }
 
 header .banner-pad, .banner-pad-less, .banner-pad-lesser {
-  padding-top: 14vw;
-  padding-bottom: 28vw;
+  padding-top: 10vw;
+  padding-bottom: 30vw;
 }
 
 .banner-pad-less {
-  padding-bottom: 7vw;
+  padding-bottom: 6vw;
 }
 
 .banner-pad-lesser {
-  padding-bottom: 3.5vw;
+  padding-bottom: 3vw;
 }
 
 .un {
