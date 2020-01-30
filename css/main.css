@@ -257,6 +257,23 @@ footer {
   100% {
     transform: translateY(16px);
   }
+
+}
+
+.logo-full {
+  display: none;
+}
+
+@media only screen  and (min-width: 25em) {
+
+.logo-k {
+  display: none;
+}
+
+.logo-full {
+  display: block;
+}
+
 }
 
 @media only screen  and (min-width: 38em) {
