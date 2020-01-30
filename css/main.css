@@ -35,12 +35,6 @@ h3, a {
   font-weight: 600;
 }
 
-.a-footer {
-  font-family: serenity, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
 nav {
   background-color: #fff;
   position: fixed;
@@ -155,7 +149,7 @@ footer {
   color: #eb2940;
 }
 
-/* my classes */
+/* my type classes */
 
 .r-pad-nav {
   padding-right: 2rem;
@@ -192,6 +186,12 @@ footer {
 .sans-serif-bold {
   font-family: serenity, sans-serif;
   font-weight: bold;
+  font-style: normal;
+}
+
+.a-footer {
+  font-family: serenity, sans-serif;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -245,10 +245,10 @@ footer {
   display: none;
   max-width: 30px;
   transform-origin: center;
-  animation: up-down 1.5s ease-in-out alternate infinite;
-  -webkit-animation: up-down 1.5s ease-in-out alternate infinite;
-  -moz-animation: up-down 1.5s ease-in-out alternate infinite;
-  -o-animation: up-down 1.5s ease-in-out alternate infinite;
+  animation: up-down 1.25s ease-in-out alternate infinite;
+  -webkit-animation: up-down 1.25s ease-in-out alternate infinite;
+  -moz-animation: up-down 1.25s ease-in-out alternate infinite;
+  -o-animation: up-down 1.25s ease-in-out alternate infinite;
 }
 
 @keyframes up-down {
@@ -256,7 +256,7 @@ footer {
     transform: translateY(0px);
   }
 
-  60% {
+  55% {
     transform: translateY(0px);
   }
 
