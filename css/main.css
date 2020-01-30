@@ -119,12 +119,12 @@ h1:hover .un::after {
 
 .square {
   width: 100%;
-  height: 110%;
+  height: 100%;
   background-color: #fff;
   z-index: 5;
   border: 1px solid #fff;
   position: absolute;
-  bottom: 5%;
+  bottom: 2.5%;
   left: 50%;
   transform: translateX(-50%);
 
