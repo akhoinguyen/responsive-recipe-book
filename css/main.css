@@ -35,6 +35,12 @@ h3, a {
   font-weight: 600;
 }
 
+.a-footer {
+  font-family: serenity, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 nav {
   background-color: #fff;
   position: fixed;
